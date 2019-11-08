@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:weightSum="10"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_start"
+            android:clickable="true"/>
+        <ImageView
+            android:id="@+id/iv_how"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/button_howto"
+            android:layout_marginLeft="25dp"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5">
+
+        <ImageView
+            android:id="@+id/iv01"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/a_ele"
+            android:clickable="true"
+            android:tag="1"/>
+        <ImageView
+            android:id="@+id/iv02"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/a_monkey"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:tag="2"/>
+        <ImageView
+            android:id="@+id/iv03"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/a_frog"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:tag="3"/>
+        <ImageView
+            android:id="@+id/iv04"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/a_pig"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:tag="4"/>
+        <ImageView
+            android:id="@+id/iv05"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/a_lion"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:tag="5"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_board"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:src="@drawable/q_board"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+</LinearLayout>
